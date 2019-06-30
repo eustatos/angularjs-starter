@@ -1,4 +1,3 @@
-console.log("TRAVIS: ", process.env.TRAVIS);
 const config = {
   module: {
     rules: [
