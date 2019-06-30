@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - stable
+  - latest
 
 addons:
   chrome:
@@ -17,7 +17,7 @@ before_script:
   - ./cc-test-reporter before-build
 
 script:
-  - yarn test -- --single-run
+  - yarn test
 
 after_script:
   - ./cc-test-reporter after-build -t lcov -p $TRAVIS_HOME/coverage/lcov.info --exit-code $TRAVIS_TEST_RESULT

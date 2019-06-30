@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack --config production.config.js",
-    "test": "cross-env NODE_ENV=test karma start"
+    "test": "karma start"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
