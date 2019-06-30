@@ -15,5 +15,5 @@ script:
   - yarn test -- --single-run
 
 after_script:
-  - echo $TRAVIS_TEST_RESULT
+  - ls -la coverage
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
