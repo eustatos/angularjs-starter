@@ -20,6 +20,4 @@ script:
   - yarn test -- --single-run
 
 after_script:
-  - pwd
-  - ls -la ./
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build -t lcov -p $TRAVIS_HOME/coverage/lcov.info --exit-code $TRAVIS_TEST_RESULT

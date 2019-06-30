@@ -1,3 +1,4 @@
+console.log("TRAVIS: ", process.env.TRAVIS);
 const config = {
   module: {
     rules: [
@@ -22,7 +23,8 @@ const config = {
         ]
       }
     ]
-  }
+  },
+  mode: "development"
 };
 
 module.exports = config;
