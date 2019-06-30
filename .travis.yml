@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-- stable
+  - stable
 
 addons:
   chrome:
-  - stable
+    - stable
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -15,4 +15,5 @@ script:
   - yarn test -- --single-run
 
 after_script:
-  - ./cc-test-reporter after-build --exit-code ./coverage/lcov.info
+  - echo $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
