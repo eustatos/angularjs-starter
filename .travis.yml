@@ -15,4 +15,4 @@ script:
   - yarn test -- --single-run
 
 after_script:
-  - ./cc-test-reporter after-build --exit-code lcov
+  - ./cc-test-reporter after-build --exit-code ./coverage/lcov.info
