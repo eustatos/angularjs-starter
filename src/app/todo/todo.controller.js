@@ -4,8 +4,7 @@ class TodoController {
     }
 
     edit() {
-        console.log('dbclick');
-        this._editMode = true;
+        this._editMode = true; 
         this._oldValue = this.todo;
     }
 
