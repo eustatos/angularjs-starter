@@ -1,7 +1,10 @@
-class App {
-  greating(name) {
-    return "Hello, " + name;
-  }
+import AppTemplate from './app.template.html';
+import AppController from './app.controller';
+
+const AppComponent  = {
+    template: AppTemplate,
+    controller: AppController
 }
 
-export default App;
+
+export default AppComponent;
