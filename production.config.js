@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     filename: 'index_bundle.js',
-    publicPath: '/'
+    publicPath: './'
   },
   devtool: 'inline-source-map',
   devServer: {
