@@ -1,0 +1,25 @@
+<li ng-class="{completed: $ctrl.todo.completed, editing: $ctrl.isEditMode()}">
+    <div class="view">
+        <input
+            class="toggle"
+            type="checkbox"
+            ng-model="$ctrl.todo.completed"
+            ng-change="$ctrl.update({todo: $ctrl.todo})"
+        >
+        <label ng-dblclick="$ctrl.edit()">{{$ctrl.todo.title}}</label>
+        <button
+            class="destroy"
+            ng-click="$ctrl.remove()"
+        ></button>
+    </div>
+    <form ng-submit="$ctrl.doneEditing()">
+        <input
+            class="edit"
+            ng-trim="false"
+            ng-model="$ctrl.todo.title"
+            ng-blur="$ctrl.doneEditing()"
+            todo-escape="$ctrl.revertEditing()"
+            todo-focus="todo == editedTodo"
+        >
+    </form>
+</li>

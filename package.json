@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "build": "webpack --config production.config.js",
+    "test": "karma start",
+    "start": "webpack-dev-server --open --config production.config.js",
+    "update-webdriver": "webdriver-manager update --gecko false",
+    "preprotractor": "npm run update-webdriver",
+    "e2e": "protractor protractor.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-istanbul": "^5.1.4",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^4.0.2",
+    "protractor": "^5.4.2",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "wepback": "^1.0.0"
+  },
+  "dependencies": {
+    "angular": "1.8.0"
+  }
+}

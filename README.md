@@ -1,0 +1,3 @@
+[![Build Status](https://travis-ci.com/eustatos/angularjs-starter.svg?branch=master)](https://travis-ci.com/eustatos/angularjs-starter)
+[![Maintainability](https://api.codeclimate.com/v1/badges/659163603cba70f92b3c/maintainability)](https://codeclimate.com/github/eustatos/angularjs-starter/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/659163603cba70f92b3c/test_coverage)](https://codeclimate.com/github/eustatos/angularjs-starter/test_coverage)
